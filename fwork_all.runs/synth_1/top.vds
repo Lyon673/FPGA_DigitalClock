@@ -1,0 +1,907 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Dec 29 21:11:15 2023
+# Process ID: 11420
+# Log file: C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/synth_1/top.vds
+# Journal file: C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.cache/wt [current_project]
+# set_property parent.project_path C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files -quiet C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# add_files -quiet C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+# set_property used_in_implementation false [get_files C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+# read_verilog -library xil_defaultlib {
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_controller.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/sine_wave.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_config.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/freq_div.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/audio_effects.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/audio_codec.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_top.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/edge_detect.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/debounce.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/recorder.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/uart_tx.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/uart_rx.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/new/debounce0.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/UART_crl.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/set_time.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/music.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/divfreq_1Hz.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/blinking.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/new/Clocking.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/sources_1/imports/import/time_transfrom.v
+#   C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/top.v
+# }
+# read_xdc C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/constrs_1/imports/Desktop/digital_clock.xdc
+# set_property used_in_implementation false [get_files C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/constrs_1/imports/Desktop/digital_clock.xdc]
+# catch { write_hwdef -file top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top -part xc7z020clg484-1
+Command: synth_design -top top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+WARNING: [Synth 8-2611] redeclaration of ansi port clk_48kHz is not allowed [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_top.v:41]
+WARNING: [Synth 8-992] reset is already implicitly declared earlier [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_top.v:69]
+WARNING: [Synth 8-2611] redeclaration of ansi port sample_end is not allowed [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_top.v:71]
+WARNING: [Synth 8-2611] redeclaration of ansi port sample_req is not allowed [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_top.v:72]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 243.230 ; gain = 88.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/top.v:3]
+INFO: [Synth 8-638] synthesizing module 'divfreq_1Hz' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/divfreq_1Hz.v:3]
+INFO: [Synth 8-256] done synthesizing module 'divfreq_1Hz' (1#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/divfreq_1Hz.v:3]
+INFO: [Synth 8-638] synthesizing module 'debounce0' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/new/debounce0.v:1]
+INFO: [Synth 8-256] done synthesizing module 'debounce0' (2#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/new/debounce0.v:1]
+INFO: [Synth 8-638] synthesizing module 'set_time' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/set_time.v:3]
+INFO: [Synth 8-256] done synthesizing module 'set_time' (3#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/set_time.v:3]
+INFO: [Synth 8-638] synthesizing module 'UART_crl' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/UART_crl.v:3]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter UART_BPS bound to: 115200 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/uart_rx.v:1]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter UART_BPS bound to: 115200 - type: integer 
+	Parameter BAUD_CNT_MAX bound to: 1085 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (4#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/uart_rx.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/uart_tx.v:1]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter UART_BPS bound to: 115200 - type: integer 
+	Parameter BAUD_CNT_MAX bound to: 1085 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (5#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/uart_tx.v:1]
+INFO: [Synth 8-256] done synthesizing module 'UART_crl' (6#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/UART_crl.v:3]
+INFO: [Synth 8-638] synthesizing module 'Clocking' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/new/Clocking.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Clocking' (7#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/new/Clocking.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'clkHour' does not match port width (5) of module 'Clocking' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/top.v:114]
+INFO: [Synth 8-638] synthesizing module 'music' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/music.v:3]
+INFO: [Synth 8-638] synthesizing module 'recorder' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/recorder.v:1]
+	Parameter idle bound to: 3'b000 
+	Parameter l_st bound to: 3'b001 
+	Parameter l_cap bound to: 3'b010 
+	Parameter r_st bound to: 3'b011 
+	Parameter r_cap bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/synth_1/.Xil/Vivado-11420-DESKTOP-1LQGH74/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (8#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/synth_1/.Xil/Vivado-11420-DESKTOP-1LQGH74/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/debounce.v:1]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (9#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/debounce.v:1]
+INFO: [Synth 8-638] synthesizing module 'i2c_top' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'freq_div' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/freq_div.v:3]
+INFO: [Synth 8-256] done synthesizing module 'freq_div' (10#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/freq_div.v:3]
+INFO: [Synth 8-638] synthesizing module 'sine_wave' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/sine_wave.v:7]
+WARNING: [Synth 8-567] referenced signal 'en' should be on the sensitivity list [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/sine_wave.v:27]
+INFO: [Synth 8-256] done synthesizing module 'sine_wave' (11#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/sine_wave.v:7]
+INFO: [Synth 8-638] synthesizing module 'i2c_config' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_config.v:1]
+	Parameter LAST_INDEX bound to: 4'b1010 
+INFO: [Synth 8-638] synthesizing module 'i2c_controller' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_controller.v:1]
+	Parameter LAST_STAGE bound to: 5'b11101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_controller.v:51]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_controller.v:65]
+INFO: [Synth 8-256] done synthesizing module 'i2c_controller' (12#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_controller.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_config.v:61]
+INFO: [Synth 8-256] done synthesizing module 'i2c_config' (13#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_config.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'status' does not match port width (4) of module 'i2c_config' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_top.v:80]
+INFO: [Synth 8-638] synthesizing module 'audio_codec' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/audio_codec.v:1]
+INFO: [Synth 8-256] done synthesizing module 'audio_codec' (14#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/audio_codec.v:1]
+INFO: [Synth 8-638] synthesizing module 'audio_effects' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/audio_effects.v:1]
+INFO: [Synth 8-256] done synthesizing module 'audio_effects' (15#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/audio_effects.v:1]
+INFO: [Synth 8-256] done synthesizing module 'i2c_top' (16#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'edge_detect' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/edge_detect.v:1]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect' (17#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/edge_detect.v:1]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/synth_1/.Xil/Vivado-11420-DESKTOP-1LQGH74/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (18#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/synth_1/.Xil/Vivado-11420-DESKTOP-1LQGH74/realtime/blk_mem_gen_0_stub.v:7]
+WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (18) of module 'blk_mem_gen_0' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/recorder.v:156]
+WARNING: [Synth 8-324] index 4 out of range [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/recorder.v:213]
+WARNING: [Synth 8-324] index 5 out of range [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/recorder.v:214]
+INFO: [Synth 8-256] done synthesizing module 'recorder' (19#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/recorder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'music' (20#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/music.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'clkHour' does not match port width (5) of module 'music' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/top.v:131]
+INFO: [Synth 8-638] synthesizing module 'time_transfrom' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/sources_1/imports/import/time_transfrom.v:3]
+INFO: [Synth 8-256] done synthesizing module 'time_transfrom' (21#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/sources_1/imports/import/time_transfrom.v:3]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:3]
+WARNING: [Synth 8-567] referenced signal 'Thousand' should be on the sensitivity list [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:29]
+WARNING: [Synth 8-567] referenced signal 'Hundred' should be on the sensitivity list [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:29]
+WARNING: [Synth 8-567] referenced signal 'Ten' should be on the sensitivity list [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:29]
+WARNING: [Synth 8-567] referenced signal 'One' should be on the sensitivity list [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:29]
+WARNING: [Synth 8-567] referenced signal 'Hour' should be on the sensitivity list [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:29]
+INFO: [Synth 8-256] done synthesizing module 'display' (22#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:3]
+INFO: [Synth 8-638] synthesizing module 'blinking' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/blinking.v:3]
+INFO: [Synth 8-256] done synthesizing module 'blinking' (23#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/blinking.v:3]
+INFO: [Synth 8-256] done synthesizing module 'top' (24#1) [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 265.215 ; gain = 110.930
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 265.215 ; gain = 110.930
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/synth_1/.Xil/Vivado-11420-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc] for cell 'music/recoder/uclk_wiz'
+Finished Parsing XDC File [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/synth_1/.Xil/Vivado-11420-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc] for cell 'music/recoder/uclk_wiz'
+Parsing XDC File [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/constrs_1/imports/Desktop/digital_clock.xdc]
+Finished Parsing XDC File [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/constrs_1/imports/Desktop/digital_clock.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 599.605 ; gain = 0.020
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 599.605 ; gain = 445.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 599.605 ; gain = 445.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.runs/synth_1/.Xil/Vivado-11420-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc, line 5).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 599.605 ; gain = 445.320
+---------------------------------------------------------------------------------
+ROM "sw_out" won't be mapped to RAM because address size (22) is larger than maximum supported(18) 
+ROM "count_1hz" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "valuehour" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "data_add_hour" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "rx_cnt" won't be mapped to RAM because it is too sparse.
+ROM "tx_cnt" won't be mapped to RAM because it is too sparse.
+ROM "en" won't be mapped to RAM because it is too sparse.
+ROM "en" won't be mapped to RAM because it is too sparse.
+ROM "led" won't be mapped to RAM because address size (41) is larger than maximum supported(18) 
+ROM "flag" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "count_3s" won't be mapped to RAM because address size (41) is larger than maximum supported(18) 
+ROM "valuehour" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "valuethou" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "valuethou" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "valuehun" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "valueten" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "valueten" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "valueone" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "clock_en" won't be mapped to RAM because it is too sparse.
+ROM "acks" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-802] inferred FSM for state register 'control_state_reg' in module 'i2c_config'
+ROM "lut_index" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "i2c_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "i2c_start" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "control_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/i2c_top.v:58]
+ROM "flag" won't be mapped to RAM because address size (31) is larger than maximum supported(18) 
+ROM "count_1hz" won't be mapped to RAM because address size (31) is larger than maximum supported(18) 
+WARNING: [Synth 8-327] inferring latch for variable 'pcm_data_reg' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/sine_wave.v:29]
+INFO: [Synth 8-3354] encoded FSM with state register 'control_state_reg' using encoding 'one-hot' in module 'i2c_config'
+WARNING: [Synth 8-327] inferring latch for variable 'sel_reg' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'data_dis_reg' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/import/display.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 599.605 ; gain = 445.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'music/recoder/volumeup' (debounce) to 'music/recoder/volumedn'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     41 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 4     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   5 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               31 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
+	               21 Bit    Registers := 6     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 9     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 15    
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   3 Input     31 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 8     
+	   3 Input     16 Bit        Muxes := 1     
+	  12 Input     13 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 20    
+	   5 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   4 Input      4 Bit        Muxes := 4     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 14    
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 68    
+	   3 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 2     
+	  31 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
+Module divfreq_1Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     31 Bit        Muxes := 1     
+Module debounce0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module set_time 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 6     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 14    
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module UART_crl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module Clocking 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     41 Bit       Adders := 1     
+	   5 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 22    
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module freq_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     31 Bit        Muxes := 1     
+Module sine_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+Module i2c_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	  31 Input      1 Bit        Muxes := 1     
+Module i2c_config 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  12 Input     13 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module audio_codec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module audio_effects 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module i2c_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+Module edge_detect 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module recorder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module music 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   4 Input      7 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 10    
+Module time_transfrom 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module blinking 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 599.605 ; gain = 445.320
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "data_add_hour" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+DSP Report: Generating DSP data2, operation Mode is: A*(B:0xa).
+DSP Report: operator data2 is absorbed into DSP data2.
+DSP Report: Generating DSP data0, operation Mode is: C+A*(B:0xe10).
+DSP Report: operator data0 is absorbed into DSP data0.
+DSP Report: operator data4 is absorbed into DSP data0.
+DSP Report: Generating DSP data0, operation Mode is: PCIN+A*(B:0x3c).
+DSP Report: operator data0 is absorbed into DSP data0.
+DSP Report: operator data3 is absorbed into DSP data0.
+DSP Report: Generating DSP data0, operation Mode is: PCIN+A*(B:0x258).
+DSP Report: operator data0 is absorbed into DSP data0.
+DSP Report: operator data4 is absorbed into DSP data0.
+ROM "u_uart_rx/rx_cnt" won't be mapped to RAM because it is too sparse.
+ROM "u_uart_tx/tx_cnt" won't be mapped to RAM because it is too sparse.
+ROM "en" won't be mapped to RAM because it is too sparse.
+ROM "en" won't be mapped to RAM because it is too sparse.
+ROM "count_3s" won't be mapped to RAM because address size (41) is larger than maximum supported(18) 
+ROM "led" won't be mapped to RAM because address size (41) is larger than maximum supported(18) 
+INFO: [Synth 8-4471] merging register 'recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[15:0]' into 'recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[15:0]' [C:/Users/BME/Desktop/final_work/fwork_all/fwork_all.srcs/sources_1/imports/audio_recorder/audio_codec.v:45]
+ROM "count_1hz" won't be mapped to RAM because address size (31) is larger than maximum supported(18) 
+ROM "flag" won't be mapped to RAM because address size (31) is larger than maximum supported(18) 
+ROM "dset/sw_out" won't be mapped to RAM because address size (22) is larger than maximum supported(18) 
+ROM "dClocking/sw_out" won't be mapped to RAM because address size (22) is larger than maximum supported(18) 
+ROM "dtran/sw_out" won't be mapped to RAM because address size (22) is larger than maximum supported(18) 
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 599.605 ; gain = 445.320
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 599.605 ; gain = 445.320
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+ Sort Area is null data0_2 : 0 0 : 377 1260 : Used 1 time 0
+ Sort Area is null data0_2 : 0 1 : 421 1260 : Used 1 time 0
+ Sort Area is null data0_2 : 0 2 : 462 1260 : Used 1 time 0
+ Sort Area is null data2_0 : 0 0 : 74 74 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|set_time    | A*(B:0xa)        | No           | 21     | 4      | 48     | 25     | 25     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|set_time    | C+A*(B:0xe10)    | No           | 21     | 12     | 21     | 25     | 21     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|set_time    | PCIN+A*(B:0x3c)  | No           | 21     | 6      | 21     | 25     | 21     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|set_time    | PCIN+A*(B:0x258) | No           | 21     | 10     | 21     | 25     | 21     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows DSPs generated at current stage. Some DSP generation could be reversed due to later optimizations. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\music/recoder/volumeup/sync_0_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Clocking/valuehun_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Clocking/valueten_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Clocking/valueone_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Clocking/valuethou_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Clocking/clkTen_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\music/recoder/volumeup/sync_0_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[23] )
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_thou_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_thou_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_thou_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_thou_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_thou_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hun_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hun_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hun_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hun_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hun_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_ten_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_ten_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_ten_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_ten_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_ten_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hour_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hour_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hour_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hour_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_hour_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_one_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_one_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_one_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_one_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\set_time/data_add_one_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/valuethou_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/valuethou_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/valuehun_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/valueten_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/valueten_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/valueone_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/clkHour_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/clkHour_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/clkHour_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/clkHour_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/clkTen_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Clocking/clkThousand_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[5] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/pcm_data_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/volumeup/sync_0_reg ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/volumeup/sync_1_reg ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/index_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/index_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/sine_wave_inst/index_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[5] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\music/recoder/mem_out_reg[2] ) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\music/recoder/volume_control_reg[1] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 599.605 ; gain = 445.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 599.605 ; gain = 445.320
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 599.605 ; gain = 445.320
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 599.605 ; gain = 445.320
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 625.961 ; gain = 471.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 628.824 ; gain = 474.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 651.469 ; gain = 497.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 651.469 ; gain = 497.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 651.469 ; gain = 497.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 651.469 ; gain = 497.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |clk_wiz_0     |     1|
+|3     |BUFG          |     2|
+|4     |CARRY4        |   184|
+|5     |DSP48E1       |     3|
+|6     |DSP48E1_1     |     1|
+|7     |INV           |     1|
+|8     |LUT1          |   499|
+|9     |LUT2          |   206|
+|10    |LUT3          |   128|
+|11    |LUT4          |   136|
+|12    |LUT5          |   137|
+|13    |LUT6          |   247|
+|14    |MUXF7         |     2|
+|15    |FDCE          |   122|
+|16    |FDPE          |     1|
+|17    |FDRE          |   529|
+|18    |FDSE          |    20|
+|19    |LD            |    13|
+|20    |IBUF          |    12|
+|21    |IOBUF         |     1|
+|22    |OBUF          |    28|
++------+--------------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------+------+
+|      |Instance                      |Module         |Cells |
++------+------------------------------+---------------+------+
+|1     |top                           |               |  2291|
+|2     |  Clocking                    |Clocking       |   300|
+|3     |  UART_crl                    |UART_crl       |   204|
+|4     |    u_uart_rx                 |uart_rx        |   118|
+|5     |    u_uart_tx                 |uart_tx        |    85|
+|6     |  blinking                    |blinking       |     6|
+|7     |  dClocking                   |debounce0      |    60|
+|8     |  display                     |display        |    71|
+|9     |  divfreq_1Hz                 |divfreq_1Hz    |   118|
+|10    |  dset                        |debounce0_0    |    60|
+|11    |  dtran                       |debounce0_1    |    60|
+|12    |  music                       |music          |   672|
+|13    |    recoder                   |recorder       |   555|
+|14    |      i2c_top_inst            |i2c_top        |   456|
+|15    |        audio_codec_inst      |audio_codec    |   130|
+|16    |        audio_effects_inst    |audio_effects  |    52|
+|17    |        freq_div_inst         |freq_div       |    81|
+|18    |        i2c_config_inst       |i2c_config     |   114|
+|19    |          i2c_controller_inst |i2c_controller |    72|
+|20    |        sine_wave_inst        |sine_wave      |    63|
+|21    |  set_time                    |set_time       |   605|
+|22    |  time_transfrom              |time_transfrom |    15|
++------+------------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 651.469 ; gain = 497.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 158 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 651.469 ; gain = 129.609
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 651.469 ; gain = 497.184
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 214 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  INV => LUT1: 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LD => LDCE: 13 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 651.469 ; gain = 464.066
+# write_checkpoint -noxdef top.dcp
+# catch { report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 651.469 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 29 21:11:34 2023...
